@@ -3,7 +3,7 @@ namespace pixi_projection {
 
 	class Sprite2dRenderer extends MultiTextureSpriteRenderer {
 		shaderVert =
-`precision highp float;
+`precision mediump float;
 attribute vec3 aVertexPosition;
 attribute vec2 aTextureCoord;
 attribute vec4 aColor;

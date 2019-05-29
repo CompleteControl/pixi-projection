@@ -5,7 +5,7 @@ namespace pixi_projection {
         size = 100;
         MAX_TEXTURES_LOCAL = 1;
 
-        shaderVert = `precision highp float;
+        shaderVert = `precision mediump float;
 attribute vec2 aVertexPosition;
 attribute vec3 aTrans1;
 attribute vec3 aTrans2;
@@ -37,7 +37,7 @@ void main(void){
 `;
         //TODO: take non-premultiplied case into account
 
-        shaderFrag = `precision highp float;
+        shaderFrag = `precision mediump float;
 varying vec2 vTextureCoord;
 varying vec3 vTrans1;
 varying vec3 vTrans2;
